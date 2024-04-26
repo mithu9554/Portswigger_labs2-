@@ -1,6 +1,6 @@
 # SQL injection
 
- * [MSSQL Injection](https://portswigger.net/web-security/sql-injection/cheat-sheet)
+ * [sql-injection/cheat-sheet](https://portswigger.net/web-security/sql-injection/cheat-sheet)
 
 ### Lab1: SQL injection vulnerability in WHERE clause allowing retrieval of hidden data
 
